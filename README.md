@@ -9,7 +9,8 @@ Notes (NodeJs):
 - Test queries using browser or postman --> http://localhost:3000
 
 Notes (PostgreSQL):
-- The DB scehma and DB script were generated using Luna Modeler
+- The DB script is provided in DB_script.sql file, but note that after writing the first statement "CREATE DATABASE library;" you should type **\c library** in the postgres shell to be able to add the tables **inside the library database** then you can copy the remaining code in file paste it in the postgres shell.
+- The DB scehma was generated using Luna Modeler
 - The database contains three different tables: Books, Borrowers and Borrowing Details
 - In the DB.js file, the following block of code should be replaced with one that matches your configuration:
   const pool = new Pool({
