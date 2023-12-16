@@ -35,24 +35,39 @@ Notes (Routes):
 
 Notes (Testing using postman):
 ADMIN:
-ADDING BOOK -> url: http://localhost:3000/api/admin/books/add, method: POST
-LISTING BOOKS -> url: http://localhost:3000/api/admin/books, method: GET
-UPDATING BOOK -> url: http://localhost:3000/api/admin/books/update, method: PUT (isbn of book to be updated should be provided in the request body)
-GETTING BOOK BY ISBN -> url: http://localhost:3000/api/admin/books/3, method: GET (should get book with ISBN 3)
-DELETE BOOK -> url: http://localhost:3000/api/admin/books, method: DELETE (isbn of book to be deleted should be provided in the request body)
+ADDING BOOK 
+url: http://localhost:3000/api/admin/books/add, method: POST
+LISTING BOOKS 
+url: http://localhost:3000/api/admin/books, method: GET
+UPDATING BOOK 
+url: http://localhost:3000/api/admin/books/update, method: PUT (isbn of book to be updated should be provided in the request body)
+GETTING BOOK BY ISBN 
+url: http://localhost:3000/api/admin/books/3, method: GET (should get book with ISBN 3)
+DELETE BOOK 
+url: http://localhost:3000/api/admin/books, method: DELETE (isbn of book to be deleted should be provided in the request body)
 
-ADDING/REGESTERING BORROWER -> url: http://localhost:3000/api/admin/borrowers/add, method: POST
-LSITING BORROWERS -> url: http://localhost:3000/api/admin/borrowers, method: GET
-UPDATING BORROWER -> url: http://localhost:3000/api/admin/borrowers/update, method: PUT (id of book to be updated should be provided in the request body)
-GETTING BORROWER BY ID -> url: http://localhost:3000/api/admin/borrowers/:id, method: GET
-DELETE BORROWER -> url: http://localhost:3000/api/admin/borrowers, method: DELETE (id of book to be deleted should be provided in the request body)
+ADDING/REGESTERING BORROWER
+url: http://localhost:3000/api/admin/borrowers/add, method: POST
+LSITING BORROWERS 
+url: http://localhost:3000/api/admin/borrowers, method: GET
+UPDATING BORROWER 
+url: http://localhost:3000/api/admin/borrowers/update, method: PUT (id of book to be updated should be provided in the request body)
+GETTING BORROWER BY ID 
+url: http://localhost:3000/api/admin/borrowers/:id, method: GET
+DELETE BORROWER
+url: http://localhost:3000/api/admin/borrowers, method: DELETE (id of book to be deleted should be provided in the request body)
 
 USER:
-SHOWING INFO -> url: http://localhost:3000/api/user/:id, method: GET
-SHOWING ALL BOOKS -> url: http://localhost:3000/api/user/:id/allbooks, method: GET
-SHOWING BORROWED BOOKS BY USER -> url: http://localhost:3000/api/user/:id/mybooks, method: GET
-BORROW BOOK -> url: http://localhost:3000/api/user/:id/allbooks/borrow, method: POST (isbn of book to be borrowed should be provided in the request body)
-RETURN BOOK -> url: http://localhost:3000/api/user/:id/mybooks/return, method: PUT (isbn of book to be returned should be provided in the request body)
+SHOWING INFO 
+url: http://localhost:3000/api/user/:id, method: GET
+SHOWING ALL BOOKS 
+url: http://localhost:3000/api/user/:id/allbooks, method: GET
+SHOWING BORROWED BOOKS BY USER 
+url: http://localhost:3000/api/user/:id/mybooks, method: GET
+BORROW BOOK 
+url: http://localhost:3000/api/user/:id/allbooks/borrow, method: POST (isbn of book to be borrowed should be provided in the request body)
+RETURN BOOK 
+url: http://localhost:3000/api/user/:id/mybooks/return, method: PUT (isbn of book to be returned should be provided in the request body)
 
 
 Notes (Validations):
