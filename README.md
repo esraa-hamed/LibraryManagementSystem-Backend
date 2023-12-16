@@ -115,4 +115,7 @@ Provided below are the query names used in the code and their explanation :
 - deleteBorrower : delete user with a certain id from the system
 - updateBorrower : update information of a certain user using id
 
-
+Notes (Code Structure):
+- src/Book           :   responsible for the logic of modifying/updating/deleting books by ADMIN
+- src/Borrower_Admin :   responsible for the logic of modifying/updating/deleting borrowers by ADMIN
+- src/Borrower       :   responsible for the logic of borrowing/returning/viewing books by USER
