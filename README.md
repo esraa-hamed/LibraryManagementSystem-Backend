@@ -124,3 +124,12 @@ Notes (Code Structure):
 - src/Book           :   responsible for the logic of modifying/updating/deleting books by ADMIN
 - src/Borrower_Admin :   responsible for the logic of modifying/updating/deleting borrowers by ADMIN
 - src/Borrower       :   responsible for the logic of borrowing/returning/viewing books by USER
+
+Notes (Some Test Cases):
+- There is a book in the database with quantity 1, let any user borrow it and then get all books again to observe quantity decreases
+- Try afterwards to make a user borrow that book (now with quantity zero) to observe that it will print that the book is currently unavailable and won't decrement below zero
+- Also, observe the book now present in mybooks of the user
+- Try adding a book with the same isbn as one existing in the database
+- Do the same for borrowers but with same ID
+- On returning a book, observe its quantity increasing, and check that it is not present now in mybooks of the user
+- Try to delete a borrower or a book that is not existing in the database
