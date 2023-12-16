@@ -1,6 +1,9 @@
 CREATE DATABASE Library;
 
-\c Library
+/* 
+you should add here :
+\c Library 
+*/
 
 CREATE TABLE Books (
     ISBN INT PRIMARY KEY,
