@@ -12,13 +12,14 @@ Notes (PostgreSQL):
 - The DB scehma and DB script were generated using Luna Modeler
 - The database contains three different tables: Books, Borrowers and Borrowing Details
 - In the DB.js file, the following block of code should be replaced with one that matches your configuration:
-const pool = new Pool({
+  const pool = new Pool({
     user: [your user name which is postgres by default],
     host: "localhost",
     database: [your database name],
     password: [your postgres password set while installing it],
     port: 5432
 });
+- You can check your configuration infor by typing this command in the postgres shell : \conninfo
 
 Notes (Routes):
 - The routes were designed to support a full working system (frontend with backend) although I didn't have the time to implement the frontend part
