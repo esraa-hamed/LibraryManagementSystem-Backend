@@ -21,7 +21,7 @@ Notes (PostgreSQL):
     password: [your postgres password set while installing it],
     port: 5432
      });
-- You can check your configuration info by typing this command in the postgres shell : \conninfo
+- You can check your configuration info by typing this command in the postgres shell : **\conninfo**
 
 Notes (Routes):
 - The routes were designed to support a full working system (frontend with backend) although I didn't have the time to implement the frontend part
