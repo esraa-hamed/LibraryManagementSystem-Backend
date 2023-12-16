@@ -36,6 +36,14 @@ const deleteBorrower = (req, res) => {
             res.send("User doesn't exist in the database !");
         }
         else{
+            pool.query(queries.checkBorrower, [id], (error, results) => {
+                if(error) throw error;
+                if(results.rows.length){
+                    pool.query(queries.deleteFromBorrowingDetails, [id], (error, results) => {
+                        if(error) throw error;
+                    })
+                }
+            })
             pool.query(queries.deleteBorrower, [id], (error, results) => {
                 if (error) throw error ;
                 res.status(200).send("User deleted successfully")
