@@ -4,7 +4,7 @@ Simple Implementation of backend logic behind library management system using No
 Notes (NodeJs):
 - Open LibrarySystem folder in vscode
 - Open a new terminal inside the folder and write:
-  1) npm i express -- save
+  1) npm install
   2) node server.js
 - Test queries using browser or postman --> http://localhost:3000
 
