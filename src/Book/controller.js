@@ -49,6 +49,14 @@ const deleteBook = (req, res) => {
         }
         else{
             // If it exists, then delete it
+            pool.query(queries.checkBook, [isbn], (error, results) => {
+                if(error) throw error;
+                if(results.rows.length){
+                    pool.query(queries.deleteBFromBorrowingDetails, [isbn], (error, results) => {
+                        if (error) throw error;
+                    })
+                }
+            })
             pool.query(queries.deleteBook, [isbn], (error, results) => {
                 if (error) throw error;
                 res.status(200).send("Book removed successfully");
